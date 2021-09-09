@@ -276,6 +276,7 @@ public interface UserRepository extends PagingAndSortingRepository<ApplicationUs
 We can add our own method to get by value field.
 
 `ApplicationUser findByEmail(@Param("email") String email);`
+
 `GET http://localhost:8081/users/search/findByEmail?email=praveen@gmail.com`
 ```json
 {
